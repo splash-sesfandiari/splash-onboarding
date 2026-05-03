@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to become a Splash Creator Partner. Run real money fantasy contests and earn on every one.">
+  <title>Apply — Splash Creators</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="apply">
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Splash Creators home">
+        <span class="logo-splash">splash</span><span class="logo-creators">creators</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="creator-stories.html" data-nav="stories">Creator Stories</a></li>
+        <li><a href="apply.html" data-nav="apply" class="nav-cta">Apply Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Apply Hero -->
+    <section class="apply-hero section-pad">
+      <div class="container apply-hero-inner">
+        <div class="hero-badge">Creator Partner Application</div>
+        <h1>Let's build something<br><span class="gradient-text">together.</span></h1>
+        <p class="hero-sub">Tell us about yourself and your community. We review every application personally and respond within a few business days.</p>
+      </div>
+    </section>
+
+    <!-- Form + FAQ -->
+    <section class="apply-body section-pad">
+      <div class="container apply-grid">
+
+        <!-- Application Form -->
+        <div class="apply-form-wrap">
+          <div id="apply-form-container">
+            <form id="apply-form" class="apply-form" novalidate>
+              <h2 class="form-title">Your Application</h2>
+
+              <div class="form-group">
+                <label for="full-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="full-name" name="full_name" placeholder="Your name" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="primary-social">Primary Social Handle <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="primary-social" name="primary_social" placeholder="e.g. @YourHandle on YouTube" required>
+                <span class="form-hint">Include the platform — e.g. "@RickRunGood on YouTube"</span>
+              </div>
+
+              <div class="form-group">
+                <label for="secondary-social">Secondary Social Link <span class="optional">(optional)</span></label>
+                <input type="text" id="secondary-social" name="secondary_social" placeholder="e.g. @YourHandle on X">
+              </div>
+
+              <div class="form-group">
+                <label for="audience-size">Estimated Audience Size <span class="required" aria-hidden="true">*</span></label>
+                <select id="audience-size" name="audience_size" required>
+                  <option value="" disabled selected>Select your range</option>
+                  <option value="under-10k">Under 10K</option>
+                  <option value="10k-50k">10K – 50K</option>
+                  <option value="50k-100k">50K – 100K</option>
+                  <option value="100k-500k">100K – 500K</option>
+                  <option value="500k-plus">500K+</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sport-focus">Primary Sport Focus <span class="required" aria-hidden="true">*</span></label>
+                <select id="sport-focus" name="sport_focus" required>
+                  <option value="" disabled selected>Select your sport</option>
+                  <option value="nfl">NFL</option>
+                  <option value="nba">NBA</option>
+                  <option value="mlb">MLB</option>
+                  <option value="nhl">NHL</option>
+                  <option value="pga">PGA / Golf</option>
+                  <option value="ncaaf">NCAAF</option>
+                  <option value="ncaab">NCAAB</option>
+                  <option value="multi">Multiple Sports</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="community-bio">Tell us about your community <span class="optional">(optional)</span></label>
+                <textarea id="community-bio" name="community_bio" rows="4" placeholder="What does your audience love? How do they engage with your content? Any context helps us set you up for success."></textarea>
+              </div>
+
+              <div id="form-error" class="form-error" role="alert" aria-live="polite" hidden>
+                Please fill in all required fields before submitting.
+              </div>
+
+              <button type="submit" class="btn btn-cta btn-large btn-full">
+                Apply to Become a Creator Partner
+              </button>
+
+              <p class="form-footnote">We review every application personally. No spam, no automated rejections.</p>
+            </form>
+          </div>
+
+          <!-- Success State -->
+          <div id="apply-success" class="apply-success" hidden aria-live="polite">
+            <div class="success-icon" aria-hidden="true">🎉</div>
+            <h2>You're in the queue!</h2>
+            <p>Thanks for applying to the Splash Creator Partner program. We review every application personally and will be in touch within a few business days.</p>
+            <p class="success-sub">In the meantime, check out how other creators are using Splash to grow their communities.</p>
+            <a href="creator-stories.html" class="btn btn-ghost">Read Creator Stories</a>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <aside class="faq-wrap">
+          <h2 class="faq-title">Common questions</h2>
+          <div class="faq-list">
+
+            <details class="faq-item">
+              <summary class="faq-question">Is Splash free to use as a creator?</summary>
+              <div class="faq-answer">
+                <p>Yes — there's no upfront cost to become a creator partner. You earn a cut of every contest you run. Splash handles the platform, payments, and compliance.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">How exactly do I earn money?</summary>
+              <div class="faq-answer">
+                <p>You earn a revenue share on <strong>every contest you run</strong> — not just when you bring in new users. Run a weekly Pick'Em for your audience? You earn on that. Run a season-long Survivor? You earn on that too. The more contests you run, the more you earn.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Do I need a large following to apply?</summary>
+              <div class="faq-answer">
+                <p>Not necessarily. We look at engagement and community quality, not just follower count. Some of our most successful creator partners started with audiences under 10K. If your audience is passionate about sports, we want to talk.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">What game formats can I run?</summary>
+              <div class="faq-answer">
+                <p>You have access to five formats: Survivor, Pick'Em, Tiers, One & Done, and Quick Picks — across NFL, NBA, MLB, NHL, PGA, NCAAF, and NCAAB. You choose which formats fit your content style and audience best.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">How long does the application review take?</summary>
+              <div class="faq-answer">
+                <p>We review every application personally and typically respond within a few business days. If we think you're a fit, we'll set up a quick call to walk you through onboarding.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Are the contests peer-to-peer?</summary>
+              <div class="faq-answer">
+                <p>Always. Your fans play against each other — never against the house. This is a core part of how Splash works, and it's what makes the community dynamics so strong.</p>
+              </div>
+            </details>
+
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-splash">splash</span><span class="logo-creators">creators</span>
+        <p>The creator platform for peer-to-peer sports gaming.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="creator-stories.html">Creator Stories</a>
+        <a href="apply.html">Apply</a>
+      </nav>
+    </div>
+    <div class="container footer-legal">
+      <p>© 2026 Splash Sports Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
